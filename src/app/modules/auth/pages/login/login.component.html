@@ -1,0 +1,57 @@
+<div class="login-web-container">
+    
+    <nb-card class="login-form">
+        <nb-card-body>
+            <div class="header-login">
+                <h1>Masuk ke Akun Anda</h1>
+
+            </div>
+            
+            <div class="row">
+                <div class="col-xs-12 col-md-6 col-lg-12 col-sm-12" style="margin-top: 10px;">
+                    <nb-form-field>
+                        <nb-icon nbPrefix icon="at-outline" pack="eva"></nb-icon>
+                        <input nbInput fullWidth placeholder="Email" [(ngModel)]="email"
+                            (keyup)="$event.keyCode == 13 ? signin() : null">
+                    </nb-form-field>
+
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-12 col-sm-12" style="margin-top: 10px;">
+                    <nb-form-field>
+                        <input fullWidth [type]="getInputType()" nbInput placeholder="Kata Sandi"
+                            (keyup)="$event.keyCode == 13 ? signin() : null" [(ngModel)]="kataSandi">
+                        <button nbSuffix nbButton ghost (click)="toggleShowPassword()">
+                            <nb-icon [icon]="showPassword ? 'eye-outline' : 'eye-off-2-outline'" pack="eva"
+                                [attr.aria-label]="showPassword ? 'hide password' : 'show password'"
+                                (keyup)="$event.keyCode == 13 ? signin() : null">
+                            </nb-icon>
+                        </button>
+                    </nb-form-field>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top:1em">
+                <div class="col-xs-6 col-md-4 col-lg-4 col-sm-6" style="margin-top: 10px;">
+                    <button nbButton shape="round" size="small" status="success" (click)="signin()" fullWidth>Masuk
+                        <nb-icon icon="log-in"></nb-icon>
+                    </button>
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-lg-4 col-sm-6" style="margin-top: 10px;">
+                    <button nbButton shape="round" size="small" status="success" routerLink="/sign-up" fullWidth>Buat
+                        Akun
+                        <nb-icon icon="people-outline"></nb-icon>
+                    </button>
+                </div>
+
+                <div class="col-xs-6 col-md-4 col-lg-4 col-sm-6" style="margin-top: 10px;">
+                    <button nbButton ghost size="small" status="success" routerLink="/lupa-password" fullWidth>Lupa
+                        Password?
+                    </button>
+                </div>
+            </div>
+
+
+        </nb-card-body>
+    </nb-card>
+</div>

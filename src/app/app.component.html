@@ -1,0 +1,12 @@
+<ngx-loading-bar color="#28df99" height="3px"></ngx-loading-bar>
+<nb-layout>
+    <nb-layout-header fixed *ngIf="isAuth">
+        <ngx-header></ngx-header>
+    </nb-layout-header>
+
+    <nb-layout-column [ngStyle]="{'margin': isAuth ? '10px': '0', 'padding':isAuth ? '10px': '0'}">
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+
+
+</nb-layout>

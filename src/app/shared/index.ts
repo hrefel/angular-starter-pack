@@ -1,0 +1,61 @@
+
+import * as nb from '@nebular/theme';
+import { Ng2IziToastModule } from 'ng2-izitoast';
+
+import { NbEvaIconsModule } from '@nebular/eva-icons';
+import { NgSelectModule } from '@ng-select/ng-select';
+import { NgxDatatableModule } from "@swimlane/ngx-datatable";
+import { IvyCarouselModule } from 'angular-responsive-carousel';
+export const UIModule = [
+  // Ng2IziToastModule,
+  NbEvaIconsModule,
+  NgSelectModule,
+  NgxDatatableModule,
+  IvyCarouselModule,
+  
+  nb.NbButtonGroupModule,
+  nb.NbCalendarKitModule,
+  nb.NbContextMenuModule,
+  nb.NbActionsModule,
+  nb.NbAccordionModule,
+  nb.NbAlertModule,
+  nb.NbAutocompleteModule,
+  nb.NbBadgeModule,
+  nb.NbBaseCalendarModule,
+  nb.NbBidiModule,
+  nb.NbButtonModule,
+  nb.NbRadioModule,
+  nb.NbCalendarModule,
+  nb.NbCalendarRangeModule,
+  nb.NbCardModule,
+  nb.NbCdkAdapterModule,
+  nb.NbCdkMappingModule,
+  nb.NbChatModule,
+  nb.NbCheckboxModule,
+  nb.NbDatepickerModule,
+  nb.NbDialogModule,
+  nb.NbFormFieldModule,
+  nb.NbIconModule,
+  nb.NbInputModule,
+  nb.NbLayoutModule,
+  nb.NbListModule,
+  nb.NbMenuModule,
+  nb.NbOverlayModule,
+  nb.NbPopoverModule,
+  nb.NbProgressBarModule,
+  nb.NbRouteTabsetModule,
+  nb.NbSearchModule,
+  nb.NbSelectModule,
+  nb.NbSidebarModule,
+  nb.NbSpinnerModule,
+  nb.NbStepperModule,
+  nb.NbTableModule,
+  nb.NbTabsetModule,
+  nb.NbThemeModule,
+  nb.NbToastrModule,
+  nb.NbToggleModule,
+  nb.NbTooltipModule,
+  nb.NbTreeGridModule,
+  nb.NbUserModule,
+  nb.NbWindowModule,
+];
