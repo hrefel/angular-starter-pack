@@ -27,7 +27,7 @@ export class AppComponent implements OnInit, DoCheck {
         let title = document.getElementsByTagName('title');
         title[0].innerText = data.state.root.firstChild.data.title
           ? data.state.root.firstChild.data.title +
-            ' - Rekrutmen Online'
+            ' - Angular'
           : '*';
       }
 
