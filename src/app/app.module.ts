@@ -35,7 +35,9 @@ import { AuthModule } from './modules/auth/auth.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({
+      appId: "ssr-angular"
+    }),
     BrowserAnimationsModule,
     HttpClientModule,
     AppRoutingModule,
