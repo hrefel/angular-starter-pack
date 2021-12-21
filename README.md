@@ -7,6 +7,15 @@ This Repository build from ** Angular ** and designed to make it easier for you.
 * Interceptors
 * Route Guard
 * State Management
+* Date Formatter
+* HTTP Service
+* SSE Service
+* SEO Service
+* Http Request Interceptor
+* Error Http Interceptor
+* JWT Interceptor
+* Media Breakpoint Service
+* Shared Module
 
 # Server Side Rendering
 

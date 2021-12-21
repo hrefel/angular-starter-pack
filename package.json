@@ -7,6 +7,10 @@
     "build": "ng build",
     "dev": "ng serve -o",
     "watch": "ng build --watch --configuration development",
+    "build:universal": "npm run build:client-and-server-bundles && npm run webpack:server",
+    "serve:universal": "node dist/server.js",
+    "build:client-and-server-bundles": "ng build --prod && ng build --prod --app 1 --output-hashing=false",
+    "webpack:server": "webpack --config webpack.config.js --progress",
     "test": "ng test"
   },
   "private": true,
@@ -25,6 +29,7 @@
     "@nebular/eva-icons": "^8.0.0",
     "@nebular/theme": "^8.0.0",
     "@ng-select/ng-select": "^7.3.0",
+    "@nguniversal/express-engine": "^13.0.1",
     "@nguniversal/module-map-ngfactory-loader": "^8.2.6",
     "@ngx-loading-bar/core": "^5.1.2",
     "@ngx-loading-bar/http-client": "^5.1.2",
